@@ -1,0 +1,145 @@
+.h1-wmap {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  display: block;
+  text-align: center;
+}
+
+.wmap-georgia {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.wmap-georgia #svgGeorgia {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+}
+
+
+
+#svgGeorgia .wmap-region {
+  cursor: pointer;
+}
+
+#svgGeorgia .wmap-region path {
+  opacity: 0.33;
+  stroke: #000000;
+  stroke-width: 1px;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+#svgGeorgia .wmap-region:hover path {
+  opacity: 0.66;
+}
+
+#svgGeorgia .wmap-region text {
+  fill: #333333;
+  opacity: 0.5;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  -webkit-transition: opacity 0.53s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+#svgGeorgia .wmap-region:hover text {
+  opacity: 1;
+}
+
+
+
+#svgAbkhazia path, #svgAbkhazia:hover path,
+#svgTbilisi path, #svgTbilisi:hover path,
+#svgOssetia path, #svgOssetia:hover path {
+  opacity: 0.20 !important;
+  cursor: default !important;
+}
+
+#svgAbkhazia text, #svgAbkhazia:hover text,
+#svgTbilisi text, #svgTbilisi:hover text,
+#svgOssetia text, #svgOssetia:hover text {
+  opacity: 0.33 !important;
+}
+
+
+#svgAbkhazia path {
+  fill: url(#grAbkhazia) !important;
+}
+
+#svgOssetia path {
+  fill: url(#grOssetia) !important;
+}
+
+#svgTbilisi path {
+  fill: url(#grTbilisi) !important;
+}
+
+#svgAdjara path {
+  fill: url(#grAdjara);
+}
+
+#svgShida path {
+  fill: url(#grShida);
+}
+
+#svgSamegrelo path {
+  fill: url(#grSamegrelo);
+}
+
+#svgImereti path {
+  fill: url(#grImereti);
+}
+
+#svgMtskheta path {
+  fill: url(#grMtskheta);
+}
+
+#svgGuria path {
+  fill: url(#grGuria);
+}
+
+#svgRacha path {
+  fill: url(#grRacha);
+}
+
+#svgSamtskhe path {
+  fill: url(#grSamtskhe);
+}
+
+#svgKvemo path {
+  fill: url(#grKvemo);
+}
+
+#svgKakheti path {
+  fill: url(#grKakheti);
+}
+
+
+
+#svgCoastline,
+#svgRivers,
+#svgLakes {
+  stroke: #56bae6;
+  stroke-width: 1px;
+}
+
+#svgCoastline,
+#svgRivers {
+  fill: none;
+}
+
+#svgCoastline {
+  stroke-width: 3px;
+}
+
+#svgLakes {
+  fill: #abddf2;
+}
