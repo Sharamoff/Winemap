@@ -1,16 +1,211 @@
-.h1-wmap {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
+.wmap-return {
   display: block;
-  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
+.wmap-return:before {
+  content: "\2190";
+  color: #999999;
+  margin-right: 6px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 749px) {
+  .wmap-return {
+    text-align: center;
+  }
+}
+
+.wmap-return:hover {
+  color: var(--color-base-accent-1) !important;
+}
+
+.wmap-legend {
+  position: absolute;
+  right: 4dvw;
+  bottom: 4dvh;
+  background-color: rgba(221, 221, 221, 0.25);
+  backdrop-filter: blur(4px);
+  padding: 10px 12px;
+  border-radius: 5px;
+  color: #000000;
+  z-index: 10;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: -.05em;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.wmap-legend__hdr {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #cccccc;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.wmap-legend__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wmap-legend__list > li {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.wmap-legend__list > li:before {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: solid 1px #ffffff;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-size: cover;
+}
+.wmap-legend__zone:before {
+  background-image: url("ml-zone.svg");
+  border-radius: initial !important;
+  border: none !important;
+}
+.wmap-legend__red:before {
+  background-image: url("ml-red.svg");
+}
+.wmap-legend__white:before {
+  background-image: url("ml-white.svg");
+}
+.wmap-legend__rose:before {
+  background-image: url("ml-rose.svg");
+}
+.wmap-legend__amber:before {
+  background-image: url("ml-amber.svg");
+}
+.wmap-legend__amber-white:before {
+  background-image: url("ml-amber-white.svg");
+}
+.wmap-legend__red-white:before {
+  background-image: url("ml-red-white.svg");
+}
+
+@media screen and (max-width: 485px) {
+
+  .wmap-legend {
+    font-size: 12px;
+    padding: 8px 10px;
+    right: 20px;
+    bottom: 40px;
+  }
+
+  .wmap-legend__hdr {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .wmap-legend__list > li:before {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+}
+
+
+.svgCoastline,
+.svgRivers,
+.svgLakes {
+  stroke: #56bae6 !important;
+  stroke-width: 1px;
+}
+
+.svgCoastline,
+.svgRivers {
+  fill: none !important;
+}
+
+.svgCoastline {
+  stroke-width: 3px;
+}
+
+.svgLakes {
+  fill: #abddf2 !important;
+}
+
+.svgRiverName {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: -.05em;
+  font-size: 11px;
+  fill: #56bae6;
+}
+
+.wmap-region .svgRivers {
+  stroke-width: 2px;
+}
+
+.wmap-region a {
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
+}
+.wmap-region a:hover {
+  scale: 100.3%;
+}
+
+.wmap-region a .callout__line,
+.wmap-region a .callout__point,
+.wmap-region a .callout__rect {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.callout__line {
+  stroke: #407445 !important;
+  stroke-width: 1px;
+}
+.wmap-region a:hover .callout__line {
+  stroke: #CC2649 !important;
+}
+
+.callout__point {
+  fill: #407445;
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
+.wmap-region a:hover .callout__point {
+  fill: #CC2649;
+}
+
+.callout__rect {
+  fill: #407445;
+  opacity: 0.75;
+}
+.wmap-region a:hover .callout__rect {
+  opacity: 1;
+  fill: #CC2649;
+}
+
+.callout__descript {
+  fill: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -.05em;
+}
+
+
 
 .wmap-georgia {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .wmap-georgia #svgGeorgia {
@@ -21,65 +216,66 @@
 
 
 
-#svgGeorgia .wmap-region {
-  cursor: pointer;
-}
 
 #svgGeorgia .wmap-region path {
-  opacity: 0.33;
+  opacity: 0.2;
   stroke: #000000;
   stroke-width: 1px;
-  -webkit-transition: opacity 0.5s ease;
-  -moz-transition: opacity 0.5s ease;
-  -o-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
 }
-#svgGeorgia .wmap-region:hover path {
+
+#svgGeorgia a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+#svgGeorgia a:hover {
+  scale: 100.3%;
+}
+
+#svgGeorgia a .wmap-region path {
+  opacity: 0.33;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#svgGeorgia a:hover .wmap-region path {
   opacity: 0.66;
 }
 
 #svgGeorgia .wmap-region text {
   fill: #333333;
-  opacity: 0.5;
+  opacity: 0.33;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -1px;
-  -webkit-transition: opacity 0.53s ease;
-  -moz-transition: opacity 0.5s ease;
-  -o-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
 }
-#svgGeorgia .wmap-region:hover text {
+
+#svgGeorgia a .wmap-region text {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.35s ease;
+}
+
+#svgGeorgia a:hover .wmap-region text {
   opacity: 1;
 }
 
 
 
-#svgAbkhazia path, #svgAbkhazia:hover path,
-#svgTbilisi path, #svgTbilisi:hover path,
-#svgOssetia path, #svgOssetia:hover path {
-  opacity: 0.20 !important;
-  cursor: default !important;
-}
-
-#svgAbkhazia text, #svgAbkhazia:hover text,
-#svgTbilisi text, #svgTbilisi:hover text,
-#svgOssetia text, #svgOssetia:hover text {
-  opacity: 0.33 !important;
-}
-
-
 #svgAbkhazia path {
-  fill: url(#grAbkhazia) !important;
+  fill: url(#grAbkhazia);
 }
 
 #svgOssetia path {
-  fill: url(#grOssetia) !important;
+  fill: url(#grOssetia);
 }
 
 #svgTbilisi path {
-  fill: url(#grTbilisi) !important;
+  fill: url(#grTbilisi);
 }
 
 #svgAdjara path {
@@ -124,22 +320,155 @@
 
 
 
-#svgCoastline,
-#svgRivers,
-#svgLakes {
-  stroke: #56bae6;
+.i-grape {
+  stroke: #ffffff;
+  stroke-width: 1px;
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, .25));
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, .25));
+}
+
+.i-grape__branch {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke-width: 2px;
+}
+
+.i-grape__list {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: #407445;
+}
+
+.gr-grape-red {
+  fill: url(#gr-grape-red);
+}
+
+.gr-grape-white {
+  fill: url(#gr-grape-white);
+}
+
+.gr-grape-rose {
+  fill: url(#gr-grape-rose);
+}
+
+.gr-grape-amber {
+  fill: url(#gr-grape-amber);
+}
+
+
+
+
+
+
+
+
+/********   Kakheti   ******/
+
+
+.wmap-kakheti {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.wmap-kakheti #svgKakheti {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+
+#svgKakheti-bk #svgTerain {
+  fill: url(#grKakheti);
+  stroke: #666;
   stroke-width: 1px;
 }
 
-#svgCoastline,
-#svgRivers {
-  fill: none;
+
+
+
+
+.wmap-PDO path {
+  stroke: #ffffff;
+  stroke-width: 1px;
+  stroke-linecap: round;
 }
 
-#svgCoastline {
-  stroke-width: 3px;
+#PDO-Kakheti path {
+  fill: #ccebb3;
 }
 
-#svgLakes {
-  fill: #abddf2;
+#PDO-Akhmeta path {
+  fill: url(#gr-white-amber);
 }
+
+#PDO-Magraani path {
+  fill: url(#gr-white-amber);
+}
+
+#PDO-Tsinandali path {
+  fill: url(#gr-white);
+}
+
+#PDO-Teliani path {
+  fill: url(#gr-red);
+}
+
+#PDO-Mukuzani path  {
+  fill: url(#gr-red);
+}
+
+#PDO-Vazisubani path {
+  fill: url(#gr-white);
+}
+
+#PDO-Zegaani path {
+  fill: url(#gr-red);
+}
+
+#PDO-Akhasheni path {
+  fill: url(#gr-red);
+}
+
+#PDO-Kotekhi path {
+  fill: url(#gr-red-white);
+}
+
+#PDO-Gurjaani path {
+  fill: url(#gr-white);
+}
+
+#PDO-Kardanakhi path {
+  fill: url(#gr-white-amber);
+}
+
+#PDO-Tsarapi path {
+  fill: url(#gr-amber);
+}
+
+#PDO-Akhoebi path {
+  fill: url(#gr-red);
+}
+
+#PDO-Kindzmarauli-Kvareli path {
+  fill: url(#gr-red);
+}
+
+#PDO-Napareuli path {
+  fill: url(#gr-red);
+}
+
+#PDO-Saperavi path {
+  fill: url(#gr-red);
+}
+
+#PDO-Manavi path {
+  fill: url(#gr-white);
+}
+
+#PDO-Tibaani path {
+  fill: url(#gr-amber);
+}
+
+
