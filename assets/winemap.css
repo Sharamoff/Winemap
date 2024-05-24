@@ -65,7 +65,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: solid 1px #ffffff;
+  border: solid 1px #FFB84D;
   margin-right: 10px;
   vertical-align: middle;
   background-size: cover;
@@ -76,22 +76,22 @@
   border: none !important;
 }
 .wmap-legend__red:before {
-  background-image: url("ml-red.svg");
+  background-image: url("ml-red.png");
 }
 .wmap-legend__white:before {
-  background-image: url("ml-white.svg");
+  background-image: url("ml-white.png");
 }
 .wmap-legend__rose:before {
-  background-image: url("ml-rose.svg");
+  background-image: url("ml-rose.png");
 }
 .wmap-legend__amber:before {
-  background-image: url("ml-amber.svg");
+  background-image: url("ml-amber.png");
 }
 .wmap-legend__amber-white:before {
-  background-image: url("ml-amber-white.svg");
+  background-image: url("ml-amber-white.png");
 }
 .wmap-legend__red-white:before {
-  background-image: url("ml-red-white.svg");
+  background-image: url("ml-red-white.png");
 }
 
 @media screen and (max-width: 485px) {
@@ -109,13 +109,45 @@
   }
 
   .wmap-legend__list > li:before {
-    width: 15px;
-    height: 15px;
+    width: 19px;
+    height: 19px;
     margin-right: 5px;
   }
 
 }
 
+
+
+.svgBorders {
+  stroke: #666;
+  stroke-dasharray: 0 0 2 2;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.svgRegionName {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: -.05em;
+  font-size: 16px;
+  fill: #bbbbbb;
+}
+
+.wmap-vitidistr path {
+  fill: #ccebb3;
+  fill-rule: evenodd;
+}
+
+.path--fillnone {
+  fill: none !important;
+  stroke-linejoin: round;
+}
+
+.wmap-PDO path {
+  stroke: #FFB84D;
+  stroke-width: 1px;
+  stroke-linecap: round;
+}
 
 .svgCoastline,
 .svgRivers,
@@ -148,6 +180,22 @@
 .wmap-region .svgRivers {
   stroke-width: 2px;
 }
+
+.svgCity circle {
+  fill: #333333;
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
+.svgCity text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -.05em;
+  font-size: 10px;
+  fill: #333333;
+  text-transform: uppercase;
+}
+
+
 
 .wmap-region a {
   -webkit-transition: all 0.3s ease !important;
@@ -202,10 +250,51 @@
 
 
 
+.i-grape {
+  stroke: #ffffff;
+  stroke-width: 1px;
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, .25));
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, .25));
+}
+
+.i-grape__branch {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke-width: 2px;
+}
+
+.i-grape__list {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: #407445;
+}
+
+.gr-grape-red {
+  fill: url(#gr-grape-red);
+}
+
+.gr-grape-white {
+  fill: url(#gr-grape-white);
+}
+
+.gr-grape-rose {
+  fill: url(#gr-grape-rose);
+}
+
+.gr-grape-amber {
+  fill: url(#gr-grape-amber);
+}
+
+
+
+
+/********   Georgia   ******/
+
 .wmap-georgia {
   display: flex;
   justify-content: center;
-  margin: 0 20px;
+  margin: 0;
 }
 
 .wmap-georgia #svgGeorgia {
@@ -213,9 +302,6 @@
   max-width: 1400px;
   height: auto;
 }
-
-
-
 
 #svgGeorgia .wmap-region path {
   opacity: 0.2;
@@ -263,8 +349,6 @@
 #svgGeorgia a:hover .wmap-region text {
   opacity: 1;
 }
-
-
 
 #svgAbkhazia path {
   fill: url(#grAbkhazia);
@@ -320,51 +404,7 @@
 
 
 
-.i-grape {
-  stroke: #ffffff;
-  stroke-width: 1px;
-  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, .25));
-  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, .25));
-}
-
-.i-grape__branch {
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-  stroke-width: 2px;
-}
-
-.i-grape__list {
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: #407445;
-}
-
-.gr-grape-red {
-  fill: url(#gr-grape-red);
-}
-
-.gr-grape-white {
-  fill: url(#gr-grape-white);
-}
-
-.gr-grape-rose {
-  fill: url(#gr-grape-rose);
-}
-
-.gr-grape-amber {
-  fill: url(#gr-grape-amber);
-}
-
-
-
-
-
-
-
-
 /********   Kakheti   ******/
-
 
 .wmap-kakheti {
   display: flex;
@@ -372,31 +412,17 @@
   margin: 0 20px;
 }
 
-.wmap-kakheti #svgKakheti {
+.wmap-kakheti #Region-Kakheti {
   width: 100%;
   max-width: 800px;
   height: auto;
 }
 
 
-#svgKakheti-bk #svgTerain {
+#Region-Kakheti-bk {
   fill: url(#grKakheti);
   stroke: #666;
   stroke-width: 1px;
-}
-
-
-
-
-
-.wmap-PDO path {
-  stroke: #ffffff;
-  stroke-width: 1px;
-  stroke-linecap: round;
-}
-
-#PDO-Kakheti path {
-  fill: #ccebb3;
 }
 
 #PDO-Akhmeta path {
@@ -472,3 +498,40 @@
 }
 
 
+
+/********   Kartli   ******/
+
+
+.wmap-kartli {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.wmap-kartli #Region-Kartli {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+#Region-Kartli-bk {
+  fill: url(#grKartli);
+  stroke: #666;
+  stroke-width: 1px;
+}
+
+#PDO-Asuretuli-Shala path {
+  fill: url(#gr-red);
+}
+
+#PDO-Ateni path {
+  fill: url(#gr-white);
+}
+
+#PDO-Okami path {
+  fill: url(#gr-red-white);
+}
+
+#PDO-Bolnisi path {
+  fill: url(#gr-red-white);
+}
