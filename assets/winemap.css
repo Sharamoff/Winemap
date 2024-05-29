@@ -26,7 +26,7 @@
   bottom: 4dvh;
   background-color: rgba(221, 221, 221, 0.25);
   backdrop-filter: blur(4px);
-  padding: 10px 12px;
+  padding: 10px 15px 10px 10px;
   border-radius: 5px;
   color: #000000;
   z-index: 10;
@@ -53,8 +53,11 @@
 }
 
 .wmap-legend__list > li {
-  margin: 0;
+  display: flex;
+  align-items: center;
+  margin: 2px 0;
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 .wmap-legend__list > li:before {
@@ -67,7 +70,6 @@
   border-radius: 50%;
   border: solid 1px #FFB84D;
   margin-right: 10px;
-  vertical-align: middle;
   background-size: cover;
 }
 .wmap-legend__zone:before {
@@ -534,4 +536,35 @@
 
 #PDO-Bolnisi path {
   fill: url(#gr-red-white);
+}
+
+
+
+/********   Racha   ******/
+
+
+.wmap-racha {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.wmap-racha #Region-Racha {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+#Region-Racha-bk {
+  fill: url(#grRacha);
+  stroke: #666;
+  stroke-width: 1px;
+}
+
+#PDO-Khvanchkara path {
+  fill: url(#gr-red);
+}
+
+#PDO-Tvishi path {
+  fill: url(#gr-white);
 }
