@@ -179,30 +179,28 @@
   fill: #56bae6;
 }
 
-.wmap-region .svgRivers {
-  stroke-width: 2px;
-}
 
 .svgCity circle {
-  fill: #333333;
+  fill: #333;
   stroke: #ffffff;
   stroke-width: 1px;
+  opacity: 0.66;
 }
 .svgCity text {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: -.05em;
   font-size: 10px;
-  fill: #333333;
+  fill: #333;
+  opacity: 0.66;
   text-transform: uppercase;
 }
-
-
 
 .wmap-region a {
   -webkit-transition: all 0.3s ease !important;
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
 }
 .wmap-region a:hover {
   scale: 100.3%;
@@ -305,104 +303,136 @@
   height: auto;
 }
 
-#svgGeorgia .wmap-region path {
-  opacity: 0.2;
-  stroke: #000000;
-  stroke-width: 1px;
+@media screen and (max-width: 768px) {
+
+  .wmap-georgia {
+    overflow: auto;
+  }
+
+  .wmap-georgia #svgGeorgia {
+    min-width: 700px;
+  }
+
 }
 
 #svgGeorgia a {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 #svgGeorgia a:hover {
   scale: 100.3%;
 }
 
-#svgGeorgia a .wmap-region path {
-  opacity: 0.33;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#svgGeorgia a:hover .wmap-region path {
-  opacity: 0.66;
+
+#svgGeorgia .svgRegion {
+  stroke: #666666;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-#svgGeorgia .wmap-region text {
-  fill: #333333;
-  opacity: 0.33;
+
+#svgGeorgia a .svgRegion {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#svgGeorgia a:hover .svgRegion {
+  fill: #C8E7CB;
+}
+
+#svgGeorgia .svgName {
+  fill: #CCCCCC;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: -1px;
+  -webkit-filter: drop-shadow(1px 0px 2px #ffffff);
+  filter: drop-shadow(1px 0px 2px #ffffff);
 }
 
-#svgGeorgia a .wmap-region text {
-  opacity: 0.5;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.35s ease;
+
+#svgGeorgia a .svgName {
+  fill: #333;
 }
 
-#svgGeorgia a:hover .wmap-region text {
-  opacity: 1;
+#svgGeorgia a:hover .svgName {
+  fill: #AE194A;
 }
 
-#svgAbkhazia path {
-  fill: url(#grAbkhazia);
+#svgGeorgia .svgViticultural {
+  fill: #CCEBB3;
+
 }
 
-#svgOssetia path {
-  fill: url(#grOssetia);
+#svgGeorgia a:hover .svgViticultural {
+  fill: #AED2B1;
 }
 
-#svgTbilisi path {
-  fill: url(#grTbilisi);
+
+#regionAbkhazia .svgRegion,
+#regionSvaneti .svgRegion,
+#regionOssetia .svgRegion {
+  fill: #fafafa;
 }
 
-#svgAdjara path {
-  fill: url(#grAdjara);
+
+
+#regionKakheti .svgRegion {
+  fill: url(#grKakheti);
 }
 
-#svgShida path {
-  fill: url(#grShida);
+#regionKartli .svgRegion {
+  fill: url(#grKartli);
 }
 
-#svgSamegrelo path {
-  fill: url(#grSamegrelo);
-}
-
-#svgImereti path {
-  fill: url(#grImereti);
-}
-
-#svgMtskheta path {
-  fill: url(#grMtskheta);
-}
-
-#svgGuria path {
-  fill: url(#grGuria);
-}
-
-#svgRacha path {
-  fill: url(#grRacha);
-}
-
-#svgSamtskhe path {
+#regionSamtskhe .svgRegion {
   fill: url(#grSamtskhe);
 }
 
-#svgKvemo path {
-  fill: url(#grKvemo);
+#regionAdjara .svgRegion {
+  fill: url(#grAdjara);
 }
 
-#svgKakheti path {
-  fill: url(#grKakheti);
+#regionGuria .svgRegion {
+  fill: url(#grGuria);
 }
+
+#regionImereti .svgRegion {
+  fill: url(#grImereti);
+}
+
+#regionRacha .svgRegion {
+  fill: url(#grRacha);
+}
+
+#regionLechkhumi .svgRegion {
+  fill: url(#grLechkhumi);
+}
+
+#regionSamegrelo .svgRegion {
+  fill: url(#grSamegrelo);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
