@@ -599,6 +599,10 @@
   fill: #AE194A;
 }
 
+#svgGeorgia .svgName#nameSvaneti {
+  fill: #999;
+}
+
 #svgGeorgia .svgViticultural {
   fill: #CCEBB3;
 
@@ -610,11 +614,12 @@
 
 
 #emptyregAbkhazia .svgRegion,
-#emptyregSvaneti .svgRegion,
 #emptyregOssetia .svgRegion {
   fill: #fafafa;
 }
-
+#emptyregSvaneti .svgRegion {
+  fill: url(#grSvaneti);
+}
 
 
 #regionKakheti .svgRegion {
@@ -653,7 +658,9 @@
   fill: url(#grSamegrelo);
 }
 
-
+#regionSvaneti .svgRegion {
+  fill: url(#grSvaneti);
+}
 
 
 
