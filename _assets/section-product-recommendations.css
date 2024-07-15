@@ -1,0 +1,28 @@
+#shopify-section-template--15315905839351__product-recommendations {
+	float: left;
+	width: 100%;
+}
+
+.product-recommendations.page-width {
+	margin-top: 50px;
+}
+.product-recommendations .subtitle {
+	margin: 5px 0 45px;
+}
+.product-recommendations {
+   display: block;
+}
+.products {
+	float: left;
+	width: 100%;
+	padding: 15px;
+}
+.product-recommendations .grid__item {
+  padding-bottom: 0;
+}
+
+@media (max-width: 380px) {
+    .products {
+        padding: 10px;
+    }
+}

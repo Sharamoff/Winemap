@@ -1,0 +1,106 @@
+.search__input.field__input {
+  padding-right: 1rem;
+}
+
+.icon-header-search {
+	width: 1em;
+	height: 1em;
+	fill: var(--color-secondary-hover);
+	font-size: 20px;
+	margin: 3px 3px 0;
+}
+
+.search__button .icon {
+  height: 1.8rem;
+}
+
+.search-header.search {
+  float: none;
+  width: auto;
+  position: relative;
+}
+.search-header__input {
+  border: 1px solid #e1e1e1;
+  height: 39px;
+  margin: 0;
+  padding: 0 15px 0 12px;
+  flex: 0 1 auto;
+  width: 635px;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: var(--font-body-family);
+  background-color: #eeeeee;
+  border-radius: 4px;
+}
+.search-header__submit {
+  border: none;
+  height: 39px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  flex: 0 1 auto;
+  width: 60px;
+  border-radius: 4px;
+  background: var(--color-base-accent-1);
+  color: #ffffff;
+}
+.search-header__submit.button .header-search.icon.icon-search {
+  width: 20px;
+  height: 20px;
+}
+.template-search__results .grid__item:hover .product-hover-info.sca-qv-image {
+  opacity: 1;
+}
+
+
+
+
+/* Remove extra spacing for search inputs in Safari */
+input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+@media (max-width: 1429px) {
+   .search-header__input {
+        width: 535px;
+   }
+}
+@media (max-width: 1269px) {
+  .search-header__input {
+    width: 336px;
+  }
+}
+@media (max-width: 989px) {
+
+  .search-header.search {
+    width: 100%;
+  }
+  .search-header__input {
+    width: calc(100% - 60px);
+  }
+  .search-header__submit.button .header-search.icon.icon-search {
+    display: block;
+  }
+  .search-header__submit {
+    width: 50px;
+  }
+}
+
+@media (max-width: 749px) {
+  .search-header__submit .header-search {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  .search-header__submit {
+    width: 50px;
+  }
+}
+@media (max-width: 479px) {
+  .template-search .grid__item {
+    width: 100%;
+  }
+}

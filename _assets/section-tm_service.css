@@ -1,0 +1,126 @@
+.servicetop-cms {
+     position: relative;
+     width: 100%;
+     margin: 0 auto;
+     float: left;
+     padding: 40px 0;
+}
+ .service {
+     float: left;
+     width: 25%;
+     position: relative;
+}
+.service-icon {
+	display: block !important;
+	background-repeat: no-repeat;
+	background-color: var(--color-secondary-hover);
+	width: 60px;
+	height: 60px;
+	float: left;
+	transition: all 500ms ease 0s;
+	-webkit-transition: all 500ms ease 0s;
+	-moz-transition: all 500ms ease 0s;
+	-ms-transition: all 500ms ease 0s;
+	-o-transition: all 500ms ease 0s;
+	margin: 0 19px 0 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+    background-position: center 16px;
+}
+ .service:hover .service-icon{
+	background-color: var(--color-base-background-1);
+	background-position: center -74px;
+}
+.service-4 .service-icon {
+    background-position: center 11px;
+}
+.service-4:hover .service-icon {
+    background-position: center -79px;
+}
+ .service-description {
+	float: left;
+	margin-top: 4px;
+}
+ .service-title {
+	font-weight: 500;
+	text-transform: capitalize;
+	line-height: 26px;
+	font-size: 16px;
+	color: var(--color-base-background-1);
+}
+
+.service-subtitle {
+	color: rgba(255,255,255,0.6);
+}
+ .service-block {
+	position: relative;
+	clear: both;
+	width: 100%;
+	float: left;
+}
+.services-wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	padding: 40px 0;
+}
+ @media screen and (max-width: 1269px) {
+     
+   
+     .service-icon::before {
+         content: none;
+    }
+	.service-description {
+		float: none;
+		text-align: center;
+		padding: 12px 0 0;
+	}
+   .service-icon{
+     text-align: center;
+	margin: 0 auto;
+ 	float: none;
+  }
+     .service-subtitle {
+         float: none;
+    }
+}
+@media screen and (max-width: 989px) {
+ 
+}
+@media screen and (max-width: 749px) {
+     .service {
+		width: 50%;
+	}
+  .services-wrapper {
+		padding: 60px 0;
+	}
+  	.service-block.service-block-3 {
+		padding-left: 0px;
+	}
+  .service-block.service-block-1 {
+		padding-right: 0px;
+	}
+    .service.service-4, .service.service-3 {
+		padding: 20px 0 0;
+	}
+    .service.service-1, .service.service-2 {
+		padding: 0 0 20px ;
+	}
+}
+ @media screen and (max-width: 479px) {
+     .service {
+         width: 100%;
+    }
+    .service.service-2, .service.service-3 {
+		padding: 0 0 20px;
+	} 
+    .service.service-3{
+    	 padding: 0 ; 
+    }
+ 
+}
+
