@@ -1,23 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-
   function isTouchDevice() {
     return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
   }
-
   function isMobileOrTablet() {
     return /Mobi|Tablet|iPad|iPhone|Android/i.test(navigator.userAgent);
   }
-
   function behaviorWinemap() {
     const regions = document.querySelectorAll("g[id^='region']");
     const hideTimeouts = {};
     regions.forEach(region => {
       const regionId = region.id.replace('region', '');
-      const glDiv = document.getElementById(`gl${regionId}`);
-      const closeBtn = glDiv.querySelector('.wmap-grapeslegend__close');
+      const glDiv = document.getElementById(`rl${regionId}`);
+      const closeBtn = glDiv.querySelector('.wmap-regionlegend__close');
       region.addEventListener("mouseenter", function () {
         clearTimeout(hideTimeouts[regionId]);
-        document.querySelectorAll(".wmap-grapeslegend").forEach(glDiv => {
+        document.querySelectorAll(".wmap-regionlegend").forEach(glDiv => {
           glDiv.classList.remove("active");
         });
         glDiv.classList.add("active");
@@ -41,15 +38,12 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
-
   if (!isTouchDevice() && !isMobileOrTablet() && window.innerWidth >= 768) {
     behaviorWinemap();
   }
-
   window.addEventListener('resize', function() {
     if (!isTouchDevice() && !isMobileOrTablet() && window.innerWidth > 768) {
       behaviorWinemap();
     }
   });
-
 });
