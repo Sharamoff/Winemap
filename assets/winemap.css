@@ -22,7 +22,6 @@
 
 
 
-
 .wmap-regionlegend {
 
   --rl-width: 200px;
@@ -61,148 +60,149 @@
 }
 
 
-
-#rlKakheti.wmap-regionlegend { left: calc(98% - var(--rl-width)); }
+#rlKakheti.wmap-regionlegend { left: calc(97% - var(--rl-width)); }
 #rlKakheti.wmap-regionlegend.active { top: 8%; }
 
-#rlKartli.wmap-regionlegend { left: calc(80% - var(--rl-width)); }
-#rlKartli.wmap-regionlegend.active { top: 4%; }
+#rlKartli.wmap-regionlegend { left: calc(81% - var(--rl-width)); }
+#rlKartli.wmap-regionlegend.active { top: 6%; }
 
-#rlRacha.wmap-regionlegend { left: calc(65% - var(--rl-width)); }
-#rlRacha.wmap-regionlegend.active { top: 1%; }
+#rlRacha.wmap-regionlegend { left: calc(64% - var(--rl-width)); }
+#rlRacha.wmap-regionlegend.active { top: 2px; }
 
 #rlLechkhumi.wmap-regionlegend { left: calc(58% - var(--rl-width)); }
-#rlLechkhumi.wmap-regionlegend.active { top: 1%; }
+#rlLechkhumi.wmap-regionlegend.active { top: 2px; }
 
 #rlSamegrelo.wmap-regionlegend { left: calc(30% - var(--rl-width)); }
 #rlSamegrelo.wmap-regionlegend.active { top: 2%; }
 #rlSamegrelo.wmap-regionlegend:after { left: auto; right: -5px; }
 
-#rlGuria.wmap-regionlegend { top: 6%; left: 0; }
+#rlGuria.wmap-regionlegend { top: 8%; left: 0; }
 #rlGuria.wmap-regionlegend.active { left: calc(30% - var(--rl-width)); }
 #rlGuria.wmap-regionlegend:after { left: auto; right: -5px; }
 
-#rlAdjara.wmap-regionlegend { top: 26%;  left: 0;}
-#rlAdjara.wmap-regionlegend.active { left: calc(30% - var(--rl-width)); }
+#rlAdjara.wmap-regionlegend { top: 28%;  left: 0;}
+#rlAdjara.wmap-regionlegend.active { left: calc(29% - var(--rl-width)); }
 #rlAdjara.wmap-regionlegend:after { left: auto; right: -5px; }
 
-#rlImereti.wmap-regionlegend { left: calc(58% - var(--rl-width)); }
+#rlImereti.wmap-regionlegend { left: calc(60% - var(--rl-width)); }
 #rlImereti.wmap-regionlegend.active { top: 2px; }
 
 #rlSamtskhe-Javakheti.wmap-regionlegend { left: calc(63% - var(--rl-width)); }
-#rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 38%; }
-
+#rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 33%; }
 
 
 @media screen and (max-width: 1200px) {
 
-  #rlKakheti.wmap-regionlegend { left: calc(98% - var(--rl-width)); }
-  #rlKakheti.wmap-regionlegend.active { top: 4%; }
+  #rlKakheti.wmap-regionlegend { left: calc(99% - var(--rl-width)); }
+  #rlKakheti.wmap-regionlegend.active { top: 1%; }
 
   #rlKartli.wmap-regionlegend { left: calc(80% - var(--rl-width)); }
-  #rlKartli.wmap-regionlegend.active { top: 4%; }
+  #rlKartli.wmap-regionlegend.active { top: 1%; }
 
-  #rlRacha.wmap-regionlegend { left: calc(65% - var(--rl-width)); }
-  #rlRacha.wmap-regionlegend.active { top: 2px; }
+  #rlRacha.wmap-regionlegend { left: calc(66% - var(--rl-width)); }
+  #rlRacha.wmap-regionlegend.active { top: 2%; }
+  #rlRacha.wmap-regionlegend:after { bottom: 24px; }
 
-  #rlLechkhumi.wmap-regionlegend { left: calc(59% - var(--rl-width)); }
+  #rlLechkhumi.wmap-regionlegend { left: calc(60% - var(--rl-width)); }
   #rlLechkhumi.wmap-regionlegend.active { top: 1%; }
   #rlLechkhumi.wmap-regionlegend:after { bottom: 24px; }
 
   #rlSamegrelo.wmap-regionlegend { left: calc(30% - var(--rl-width)); }
   #rlSamegrelo.wmap-regionlegend.active { top: 2px; }
 
-  #rlGuria.wmap-regionlegend { top: 2px; left: 0; }
-  #rlGuria.wmap-regionlegend.active { left: calc(30% - var(--rl-width)); }
-
-  #rlAdjara.wmap-regionlegend { top: 20%;  left: 0;}
-  #rlAdjara.wmap-regionlegend.active { left: calc(29% - var(--rl-width)); }
-
-  #rlImereti.wmap-regionlegend { left: calc(58% - var(--rl-width)); }
-  #rlImereti.wmap-regionlegend.active { top: 2px; }
-
-  #rlSamtskhe-Javakheti.wmap-regionlegend { left: calc(64% - var(--rl-width)); }
-  #rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 27%; }
-
-}
-
-
-@media screen and (max-width: 1100px) {
-
-  #rlKakheti.wmap-regionlegend { left: calc(99% - var(--rl-width)); }
-  #rlKakheti.wmap-regionlegend.active { top: 2%; }
-
-  #rlKartli.wmap-regionlegend { left: calc(84% - var(--rl-width)); }
-  #rlKartli.wmap-regionlegend.active { top: 2px; }
-
-  #rlRacha.wmap-regionlegend { left: calc(66% - var(--rl-width)); }
-  #rlRacha.wmap-regionlegend.active { top: 2px; }
-
-  #rlLechkhumi.wmap-regionlegend { left: calc(61% - var(--rl-width)); }
-  #rlLechkhumi.wmap-regionlegend.active { top: 2px; }
-
-  #rlSamegrelo.wmap-regionlegend { left: calc(30% - var(--rl-width)); }
-  #rlSamegrelo.wmap-regionlegend.active { top: 2px; }
-
-  #rlGuria.wmap-regionlegend { top: 2px; left: 0; }
+  #rlGuria.wmap-regionlegend { top: 4%; left: 0; }
   #rlGuria.wmap-regionlegend.active { left: calc(30% - var(--rl-width)); }
   #rlGuria.wmap-regionlegend:after { bottom: 24px; }
 
   #rlAdjara.wmap-regionlegend { top: 20%;  left: 0;}
   #rlAdjara.wmap-regionlegend.active { left: calc(29% - var(--rl-width)); }
 
-  #rlImereti.wmap-regionlegend { left: calc(61% - var(--rl-width)); }
+  #rlImereti.wmap-regionlegend { left: calc(63% - var(--rl-width)); }
   #rlImereti.wmap-regionlegend.active { top: 2px; }
   #rlImereti.wmap-regionlegend:after { bottom: 48px; }
 
   #rlSamtskhe-Javakheti.wmap-regionlegend { left: calc(66% - var(--rl-width)); }
-  #rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 27%; }
+  #rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 28%; }
+
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  #rlKakheti.wmap-regionlegend { left: calc(100% - var(--rl-width)); }
+  #rlKakheti.wmap-regionlegend.active { top: 2px; }
+
+  #rlKartli.wmap-regionlegend { left: calc(84% - var(--rl-width)); }
+  #rlKartli.wmap-regionlegend.active { top: 2px; }
+
+  #rlRacha.wmap-regionlegend { left: calc(67% - var(--rl-width)); }
+  #rlRacha.wmap-regionlegend.active { top: 2px; }
+
+  #rlLechkhumi.wmap-regionlegend { left: calc(62% - var(--rl-width)); }
+  #rlLechkhumi.wmap-regionlegend.active { top: 2px; }
+
+  #rlSamegrelo.wmap-regionlegend { left: calc(30% - var(--rl-width)); }
+  #rlSamegrelo.wmap-regionlegend.active { top: 2px; }
+
+  #rlGuria.wmap-regionlegend { top: 4%; left: 0; }
+  #rlGuria.wmap-regionlegend.active { left: calc(30% - var(--rl-width)); }
+  #rlGuria.wmap-regionlegend:after { bottom: 20px; }
+
+  #rlAdjara.wmap-regionlegend { top: 21%;  left: 0;}
+  #rlAdjara.wmap-regionlegend.active { left: calc(29% - var(--rl-width)); }
+
+  #rlImereti.wmap-regionlegend { left: calc(64% - var(--rl-width)); }
+  #rlImereti.wmap-regionlegend.active { top: 2px; }
+  #rlImereti.wmap-regionlegend:after { bottom: 42px; }
+
+  #rlSamtskhe-Javakheti.wmap-regionlegend { left: calc(66% - var(--rl-width)); }
+  #rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 26%; }
 
 }
 
 
 @media screen and (max-width: 1000px) {
 
-  #rlKakheti.wmap-regionlegend { left: calc(99% - var(--rl-width)); }
+  #rlKakheti.wmap-regionlegend { left: calc(100% - var(--rl-width)); }
   #rlKakheti.wmap-regionlegend.active { top: 2px; }
   #rlKakheti.wmap-regionlegend:after { left: calc(var(--rl-width)/2 - 5px); }
 
-  #rlKartli.wmap-regionlegend { left: calc(84% - var(--rl-width)); }
+  #rlKartli.wmap-regionlegend { left: calc(86% - var(--rl-width)); }
   #rlKartli.wmap-regionlegend.active { top: 2px; }
-  #rlKartli.wmap-regionlegend:after { bottom: 48px; }
+  #rlKartli.wmap-regionlegend:after { bottom: 42px; }
 
   #rlRacha.wmap-regionlegend { left: calc(70% - var(--rl-width)); }
   #rlRacha.wmap-regionlegend.active { top: 2px; }
-  #rlRacha.wmap-regionlegend:after { bottom: 48px; }
+  #rlRacha.wmap-regionlegend:after { bottom: 42px; }
 
   #rlLechkhumi.wmap-regionlegend { left: calc(64% - var(--rl-width)); }
-  #rlLechkhumi.wmap-regionlegend.active { top: 5px; }
-  #rlLechkhumi.wmap-regionlegend:after { bottom: 48px; }
+  #rlLechkhumi.wmap-regionlegend.active { top: 2px; }
+  #rlLechkhumi.wmap-regionlegend:after { bottom: 42px; }
 
   #rlSamegrelo.wmap-regionlegend { left: calc(30% - var(--rl-width)); }
   #rlSamegrelo.wmap-regionlegend.active { top: 2px; }
-  #rlSamegrelo.wmap-regionlegend:after { bottom: 48px; }
+  #rlSamegrelo.wmap-regionlegend:after { bottom: 42px; }
 
   #rlGuria.wmap-regionlegend { top: 2%; left: 0; }
   #rlGuria.wmap-regionlegend.active { left: calc(30% - var(--rl-width)); }
-  #rlGuria.wmap-regionlegend:after { bottom: 48px; }
+  #rlGuria.wmap-regionlegend:after { bottom: 42px; }
 
-  #rlAdjara.wmap-regionlegend { top: 12%;  left: 0;}
+  #rlAdjara.wmap-regionlegend { top: 14%;  left: 0;}
   #rlAdjara.wmap-regionlegend.active { left: calc(29% - var(--rl-width)); }
 
   #rlImereti.wmap-regionlegend { left: calc(68% - var(--rl-width)); }
   #rlImereti.wmap-regionlegend.active { top: 2px; }
-  #rlImereti.wmap-regionlegend:after { bottom: 72px; }
+  #rlImereti.wmap-regionlegend:after { bottom: 42px; }
 
-  #rlSamtskhe-Javakheti.wmap-regionlegend { left: calc(68% - var(--rl-width)); }
-  #rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 24%; }
+  #rlSamtskhe-Javakheti.wmap-regionlegend { left: calc(70% - var(--rl-width)); }
+  #rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 25%; }
 
 }
 
 
 @media screen and (max-width: 900px) {
 
-  #rlKakheti.wmap-regionlegend { left: calc(99% - var(--rl-width)); }
+  #rlKakheti.wmap-regionlegend { left: calc(100% - var(--rl-width)); }
   #rlKakheti.wmap-regionlegend.active { top: 2px; }
   #rlKakheti.wmap-regionlegend:after { left: calc(var(--rl-width)/2 - 5px); }
 
@@ -213,23 +213,23 @@
   #rlRacha.wmap-regionlegend { left: calc(72% - var(--rl-width)); }
   #rlRacha.wmap-regionlegend.active { top: 2px; }
 
-  #rlLechkhumi.wmap-regionlegend { left: calc(65% - var(--rl-width)); }
-  #rlLechkhumi.wmap-regionlegend.active { top: 5px; }
-  #rlLechkhumi.wmap-regionlegend:after { bottom: 58px; }
+  #rlLechkhumi.wmap-regionlegend { left: calc(67% - var(--rl-width)); }
+  #rlLechkhumi.wmap-regionlegend.active { top: 2px; }
+  #rlLechkhumi.wmap-regionlegend:after { bottom: 68px; }
 
   #rlSamegrelo.wmap-regionlegend { left: calc(30% - var(--rl-width)); }
   #rlSamegrelo.wmap-regionlegend.active { top: 2px; }
 
   #rlGuria.wmap-regionlegend { top: 2px; left: 0; }
   #rlGuria.wmap-regionlegend.active { left: calc(30% - var(--rl-width)); }
-  #rlGuria.wmap-regionlegend:after { bottom: 72px; }
+  #rlGuria.wmap-regionlegend:after { bottom: 64px; }
 
   #rlAdjara.wmap-regionlegend { top: 6%;  left: 0;}
   #rlAdjara.wmap-regionlegend.active { left: calc(29% - var(--rl-width)); }
 
   #rlImereti.wmap-regionlegend { left: calc(66% - var(--rl-width)); }
   #rlImereti.wmap-regionlegend.active { top: 2px; }
-  #rlImereti.wmap-regionlegend:after { bottom: 120px; }
+  #rlImereti.wmap-regionlegend:after { bottom: 42px; }
 
   #rlSamtskhe-Javakheti.wmap-regionlegend { left: calc(72% - var(--rl-width)); }
   #rlSamtskhe-Javakheti.wmap-regionlegend.active { top: 14%; }
@@ -237,14 +237,9 @@
 }
 
 
-
-
-
-
-
 .wmap-regionlegend__hdr {
   display: flex;
-  gap: 10px;
+  gap: 9px;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -253,7 +248,7 @@
   white-space: nowrap;
   line-height: 1;
   color: #000000;
-  padding: 10px  ;
+  padding: 9px 9px 6px 9px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -279,22 +274,28 @@
   cursor: pointer;
   border: none;
   opacity: 0.75;
-  margin-left: 10px;
+  margin-left: 9px;
 }
 .wmap-regionlegend__close:hover {
   opacity: 1;
 }
 
 .wmap-regionlegend__descript {
-  padding: 0 10px 8px 10px;
+  margin: 0 3px 9px 9px;
+  padding: 0;
+}
+
+.wmap-regionlegend__descript > li {
+  list-style: none;
+  margin: 3px auto;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.1;
   color: #333333;
 }
 
 @media screen and (max-width: 1100px) {
-  .wmap-regionlegend__descript {
+  .wmap-regionlegend__descript > li {
     font-size: 11px;
   }
 }
@@ -303,7 +304,7 @@
 .wmap-regionlegend__winelist {
   list-style: none;
   margin: 0;
-  padding: 4px 0;
+  padding: 3px 0;
   border-top: solid 1px #fff;
 }
 
@@ -327,17 +328,10 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 10px;
+  padding: 3px 9px;
   text-decoration: none !important;
   color: #333333 !important;
   line-height: 1;
-}
-
-@media screen and (max-width: 1100px) {
-  .wmap-regionlegend__charact > li a,
-  .wmap-regionlegend__winelist > li a {
-    gap: 4px;
-  }
 }
 
 .wmap-regionlegend__charact > li a:hover,
@@ -397,12 +391,6 @@
 
 
 
-
-
-
-
-
-
 .wmap-legend {
   position: absolute;
   right: 4dvw;
@@ -415,7 +403,7 @@
   z-index: 10;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  letter-spacing: -.05em;
+  letter-spacing: -.03em;
   font-size: 14px;
   overflow: hidden;
 }
@@ -503,6 +491,34 @@
 
 
 
+.svgRegion {
+  stroke: #666666;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+a .svgRegion {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.svgViticultural {
+  fill: #CCEBB3;
+  stroke-linejoin: round;
+}
+
+.svg--empty {
+  fill: #eeeeee;
+  stroke: none;
+}
+
+a:hover .svgViticultural {
+  fill: #AED2B1;
+}
+
 .svgBorders {
   stroke: #666;
   stroke-dasharray: 0 0 2 2;
@@ -513,25 +529,9 @@
 .svgRegionName {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  letter-spacing: -.05em;
+  letter-spacing: -.03em;
   font-size: 16px;
   fill: #bbbbbb;
-}
-
-.wmap-vitidistr path {
-  fill: #ccebb3;
-  fill-rule: evenodd;
-}
-
-.path--fillnone {
-  fill: none !important;
-  stroke-linejoin: round;
-}
-
-.wmap-PDO path {
-  stroke: #FFB84D;
-  stroke-width: 1px;
-  stroke-linecap: round;
 }
 
 .svgCoastline,
@@ -557,81 +557,90 @@
 .svgRiverName {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  letter-spacing: -.05em;
+  letter-spacing: -.03em;
   font-size: 11px;
   fill: #56bae6;
 }
 
+.svgPDO {
+  stroke: #FFB84D;
+  stroke-width: 1px;
+  stroke-linecap: round;
+}
 
 .svgCity circle {
   fill: #333;
   stroke: #ffffff;
   stroke-width: 1px;
+  r: 3px;
   opacity: 0.66;
 }
 .svgCity text {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  letter-spacing: -.05em;
+  letter-spacing: -.03em;
   font-size: 10px;
   fill: #333;
   opacity: 0.66;
   text-transform: uppercase;
 }
 
-.wwwwmap-region a {
+.path--fillnone {
+  fill: none !important;
+  stroke-linejoin: round;
+}
+
+.wmap-region a {
   -webkit-transition: all 0.3s ease !important;
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   transition: all 0.3s ease !important;
 }
-.wwwwmap-region a:hover {
+.wmap-region a:hover {
   scale: 100.3%;
 }
 
-.wwwwmap-region a .callout__line,
-.wwwwmap-region a .callout__point,
-.wwwwmap-region a .callout__rect {
+.wmap-region a .pdo-callout path,
+.wmap-region a .pdo-callout circle,
+.wmap-region a .pdo-callout foreignObject {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
 
-.callout__line {
+.pdo-callout path {
   stroke: #407445 !important;
   stroke-width: 1px;
 }
-.wmap-region a:hover .callout__line {
-  stroke: #CC2649 !important;
+.wmap-region a:hover .pdo-callout path {
+  stroke: #333333 !important;
+  box-shadow: 1px 1px 3px #ffffff;
 }
 
-.callout__point {
+.pdo-callout circle {
   fill: #407445;
   stroke: #ffffff;
   stroke-width: 1px;
+  r: 2.5px;
 }
-.wwwwmap-region a:hover .callout__point {
-  fill: #CC2649;
-}
-
-.callout__rect {
-  fill: #407445;
-  opacity: 0.75;
-}
-.wwwwmap-region a:hover .callout__rect {
-  opacity: 1;
-  fill: #CC2649;
-}
-
-.callout__descript {
+.wmap-region a:hover .pdo-callout circle {
+  stroke: #333333;
   fill: #ffffff;
+}
+
+.pdo-callout foreignObject{
+  background-color: rgba(64,116,69,0.75);
+  height: 15px;
+  text-align: center;
+  color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 11px;
-  font-weight: 500;
-  letter-spacing: -.05em;
+  font-weight: 400;
+  letter-spacing: -.03em;
 }
-
-
+.wmap-region a:hover .pdo-callout foreignObject {
+  background-color: #AE194A;
+}
 
 .i-grape {
   stroke: #ffffff;
@@ -668,6 +677,39 @@
 .gr-grape-amber {
   fill: url(#gr-grape-amber);
 }
+
+
+
+.winemap-plate {
+  position: sticky;
+  top: 40px;
+  background: #ffffff;
+  z-index: 3;
+  padding: 20px 20px 50px 20px;
+}
+
+@media screen and (min-resolution: 120dpi) {
+  .winemap-plate {
+    transform: scale(0.8);
+    width: 125%;
+    margin-left: -12.5%;
+    margin-top: -6%;
+    top: -40px;
+    overflow: hidden;
+  }
+}
+
+.winemap-plate > .page_title {
+  font-size: 32px;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 
 
 
@@ -708,22 +750,6 @@
   scale: 100.3%;
 }
 
-
-#svgGeorgia .svgRegion {
-  stroke: #666666;
-  stroke-width: 1px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-
-#svgGeorgia a .svgRegion {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 #svgGeorgia a:hover .svgRegion {
   fill: #C8E7CB;
 }
@@ -738,7 +764,6 @@
   filter: drop-shadow(1px 0px 2px #ffffff);
 }
 
-
 #svgGeorgia a .svgName {
   fill: #333;
 }
@@ -747,80 +772,22 @@
   fill: #AE194A;
 }
 
-#svgGeorgia .svgName#nameSvaneti {
-  fill: #999;
-}
-
-#svgGeorgia .svgViticultural {
-  fill: #CCEBB3;
-
-}
-
-#svgGeorgia a:hover .svgViticultural {
-  fill: #AED2B1;
-}
-
-
-#emptyregAbkhazia .svgRegion,
-#emptyregOssetia .svgRegion {
-  fill: #fafafa;
-}
-#emptyregSvaneti .svgRegion {
-  fill: url(#grSvaneti);
-}
-
-
-#regionKakheti .svgRegion {
-  fill: url(#grKakheti);
-}
-
-#regionKartli .svgRegion {
-  fill: url(#grKartli);
-}
-
-#regionSamtskhe-Javakheti .svgRegion {
-  fill: url(#grSamtskhe-Javakheti);
-}
-
-#regionAdjara .svgRegion {
-  fill: url(#grAdjara);
-}
-
-#regionGuria .svgRegion {
-  fill: url(#grGuria);
-}
-
-#regionImereti .svgRegion {
-  fill: url(#grImereti);
-}
-
-#regionRacha .svgRegion {
-  fill: url(#grRacha);
-}
-
-#regionLechkhumi .svgRegion {
-  fill: url(#grLechkhumi);
-}
-
-#regionSamegrelo .svgRegion {
-  fill: url(#grSamegrelo);
-}
-
-#regionSvaneti .svgRegion {
-  fill: url(#grSvaneti);
-}
-
-
-
-
-
-
-
-
-
-
-
-
+#svgGeorgia .svgName#nameSvaneti,
+#svgGeorgia .svgName#nameAbkhazia,
+#svgGeorgia .svgName#nameOssetia      { fill: #999; }
+#emptyregAbkhazia .svgRegion          { fill: url(#grAbkhazia);  }
+#emptyregOssetia .svgRegion           { fill: url(#grOssetia); }
+#emptyregSvaneti .svgRegion           { fill: url(#grSvaneti); }
+#regionKakheti .svgRegion             { fill: url(#grKakheti); }
+#regionKartli .svgRegion              { fill: url(#grKartli); }
+#regionSamtskhe-Javakheti .svgRegion  { fill: url(#grSamtskhe-Javakheti); }
+#regionAdjara .svgRegion              { fill: url(#grAdjara); }
+#regionGuria .svgRegion               { fill: url(#grGuria); }
+#regionImereti .svgRegion             { fill: url(#grImereti); }
+#regionRacha .svgRegion               { fill: url(#grRacha); }
+#regionLechkhumi .svgRegion           { fill: url(#grLechkhumi); }
+#regionSamegrelo .svgRegion           { fill: url(#grSamegrelo); }
+#regionSvaneti .svgRegion             { fill: url(#grSvaneti); }
 
 
 
@@ -829,134 +796,101 @@
 /********   Kakheti   ******/
 
 .wmap-kakheti {
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
-}
-
-.wmap-kakheti #Region-Kakheti {
+  position: relative;
   width: 100%;
   max-width: 800px;
+  margin: 0 auto;
+}
+
+.wmap-kakheti #svgKakheti {
+  width: 100%;
   height: auto;
 }
 
+@media screen and (max-width: 768px) {
 
-#Region-Kakheti-bk {
-  fill: url(#grKakheti);
-  stroke: #666;
-  stroke-width: 1px;
+  .wmap-kakheti {
+    overflow: auto;
+  }
+
+  .wmap-kakheti #svgKakheti {
+    min-width: 400px;
+  }
+
 }
 
-#PDO-Akhmeta path {
-  fill: url(#gr-white-amber);
-}
+#PDO-Akhmeta .svgPDO              { fill: url(#gr-white-amber); }
+#PDO-Kisi-Magraani .svgPDO        { fill: url(#gr-white-amber); }
+#PDO-Tsinandali .svgPDO           { fill: url(#gr-white); }
+#PDO-Teliani .svgPDO              { fill: url(#gr-red); }
+#PDO-Mukuzani .svgPDO             { fill: url(#gr-red); }
+#PDO-Vazisubani .svgPDO           { fill: url(#gr-white); }
+#PDO-Zegaani .svgPDO              { fill: url(#gr-red); }
+#PDO-Akhasheni .svgPDO            { fill: url(#gr-red); }
+#PDO-Kotekhi .svgPDO              { fill: url(#gr-red-white); }
+#PDO-Gurjaani .svgPDO             { fill: url(#gr-white); }
+#PDO-Kardanakhi .svgPDO           { fill: url(#gr-white-amber); }
+#PDO-Tsarapi .svgPDO              { fill: url(#gr-amber); }
+#PDO-Akhoebi .svgPDO              { fill: url(#gr-red); }
+#PDO-Kindzmarauli-Kvareli .svgPDO { fill: url(#gr-red); }
+#PDO-Napareuli .svgPDO            { fill: url(#gr-red); }
+#PDO-Saperavi-Khashmi .svgPDO     { fill: url(#gr-red); }
+#PDO-Manavi .svgPDO               { fill: url(#gr-white); }
+#PDO-Tibaani .svgPDO              { fill: url(#gr-amber); }
 
-#PDO-Magraani path {
-  fill: url(#gr-white-amber);
-}
 
-#PDO-Tsinandali path {
-  fill: url(#gr-white);
-}
-
-#PDO-Teliani path {
-  fill: url(#gr-red);
-}
-
-#PDO-Mukuzani path  {
-  fill: url(#gr-red);
-}
-
-#PDO-Vazisubani path {
-  fill: url(#gr-white);
-}
-
-#PDO-Zegaani path {
-  fill: url(#gr-red);
-}
-
-#PDO-Akhasheni path {
-  fill: url(#gr-red);
-}
-
-#PDO-Kotekhi path {
-  fill: url(#gr-red-white);
-}
-
-#PDO-Gurjaani path {
-  fill: url(#gr-white);
-}
-
-#PDO-Kardanakhi path {
-  fill: url(#gr-white-amber);
-}
-
-#PDO-Tsarapi path {
-  fill: url(#gr-amber);
-}
-
-#PDO-Akhoebi path {
-  fill: url(#gr-red);
-}
-
-#PDO-Kindzmarauli-Kvareli path {
-  fill: url(#gr-red);
-}
-
-#PDO-Napareuli path {
-  fill: url(#gr-red);
-}
-
-#PDO-Saperavi path {
-  fill: url(#gr-red);
-}
-
-#PDO-Manavi path {
-  fill: url(#gr-white);
-}
-
-#PDO-Tibaani path {
-  fill: url(#gr-amber);
-}
 
 
 
 /********   Kartli   ******/
 
-
 .wmap-kartli {
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
-}
-
-.wmap-kartli #Region-Kartli {
+  position: relative;
   width: 100%;
   max-width: 800px;
+  margin: 0 auto;
+}
+
+.wmap-kartli #svgKartli {
+  width: 100%;
   height: auto;
 }
 
-#Region-Kartli-bk {
-  fill: url(#grKartli);
-  stroke: #666;
-  stroke-width: 1px;
+@media screen and (max-width: 768px) {
+
+  .wmap-kartli {
+    overflow: auto;
+  }
+
+  .wmap-kartli #svgKartli {
+    min-width: 400px;
+  }
+
 }
 
-#PDO-Asuretuli-Shala path {
-  fill: url(#gr-red);
-}
+#PDO-Asuretuli-Shala .svgPDO  { fill: url(#gr-red); }
+#PDO-Ateni .svgPDO            { fill: url(#gr-white); }
+#PDO-Okami .svgPDO            { fill: url(#gr-red-white); }
+#PDO-Bolnisi .svgPDO          { fill: url(#gr-red-white); }
 
-#PDO-Ateni path {
-  fill: url(#gr-white);
-}
 
-#PDO-Okami path {
-  fill: url(#gr-red-white);
-}
 
-#PDO-Bolnisi path {
-  fill: url(#gr-red-white);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
