@@ -584,6 +584,9 @@ a:hover .svgViticultural {
   opacity: 0.66;
   text-transform: uppercase;
 }
+.svgCity text tspan {
+  fill: #dddddd;
+}
 
 .path--fillnone {
   fill: none !important;
@@ -879,46 +882,30 @@ a:hover .svgViticultural {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /********   Racha   ******/
 
-
 .wmap-racha {
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.wmap-racha #Region-Racha {
+.wmap-racha #svgRacha {
   width: 100%;
-  max-width: 1200px;
   height: auto;
 }
 
-#Region-Racha-bk {
-  fill: url(#grRacha);
-  stroke: #666;
-  stroke-width: 1px;
+@media screen and (max-width: 768px) {
+
+  .wmap-racha {
+    overflow: auto;
+  }
+
+  .wmap-racha #svgRacha {
+    min-width: 400px;
+  }
+
 }
 
-#PDO-Khvanchkara path {
-  fill: url(#gr-red);
-}
-
-#PDO-Tvishi path {
-  fill: url(#gr-white);
-}
+#PDO-Khvanchkara .svgPDO { fill: url(#gr-red); }
