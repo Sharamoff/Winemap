@@ -688,7 +688,7 @@ a:hover .svgViticultural {
   top: 40px;
   background: #ffffff;
   z-index: 3;
-  padding: 20px 20px 50px 20px;
+  padding: 20px;
 }
 
 @media screen and (min-resolution: 120dpi) {
@@ -880,8 +880,6 @@ a:hover .svgViticultural {
 
 
 
-
-
 /********   Racha   ******/
 
 .wmap-racha {
@@ -909,3 +907,35 @@ a:hover .svgViticultural {
 }
 
 #PDO-Khvanchkara .svgPDO { fill: url(#gr-red); }
+
+
+
+
+
+/********   Lechkhumi   ******/
+
+.wmap-lechkhumi {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wmap-racha #svgLechkhumi {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .wmap-lechkhumi {
+    overflow: auto;
+  }
+
+  .wmap-lechkhumi #svgLechkhumi {
+    min-width: 400px;
+  }
+
+}
+
+#PDO-Tvishi .svgPDO { fill: url(#gr-white); }
