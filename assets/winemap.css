@@ -939,3 +939,67 @@ a:hover .svgViticultural {
 }
 
 #PDO-Tvishi .svgPDO { fill: url(#gr-white); }
+
+
+
+
+
+/********   Imereti   ******/
+
+.wmap-imereti {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wmap-racha #svgImereti {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .wmap-imereti {
+    overflow: auto;
+  }
+
+  .wmap-imereti #svgImereti {
+    min-width: 400px;
+  }
+
+}
+
+#PDO-Sviri .svgPDO { fill: url(#gr-white); }
+
+
+
+
+
+/********   Samegrelo   ******/
+
+.wmap-samegrelo {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wmap-samegrelo #svgSamegrelo {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .wmap-samegrelo {
+    overflow: auto;
+  }
+
+  .wmap-imereti #svgSamegrelo {
+    min-width: 400px;
+  }
+
+}
+
+#PDO-Salkhino_Ojaleshi .svgPDO { fill: url(#gr-red); }
