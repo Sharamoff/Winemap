@@ -536,13 +536,15 @@ a:hover .svgViticultural {
 
 .svgCoastline,
 .svgRivers,
+.svgViticulturalRivers,
 .svgLakes {
   stroke: #56bae6 !important;
   stroke-width: 1px;
 }
 
 .svgCoastline,
-.svgRivers {
+.svgRivers,
+.svgViticulturalRivers {
   fill: none !important;
 }
 
@@ -1003,3 +1005,33 @@ a:hover .svgViticultural {
 }
 
 #PDO-Salkhino_Ojaleshi .svgPDO { fill: url(#gr-red); }
+
+
+
+
+
+/********   Samtskhe–Javakheti   ******/
+
+.wmap-samtskhe–javakheti {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wmap-samtskhe–javakheti #svgSamtskhe–Javakheti {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .wmap-samtskhe–javakheti {
+    overflow: auto;
+  }
+
+  .wmap-samtskhe–javakheti #svgSamtskhe–Javakheti {
+    min-width: 400px;
+  }
+
+}
