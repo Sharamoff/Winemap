@@ -35,7 +35,7 @@
   box-shadow: 0 1px 4px rgba(132, 185, 136, 0.5);
   border: 1px solid #ffffff;
   border-radius: 4px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   width: var(--rl-width);
 }
 
@@ -499,10 +499,10 @@
 }
 
 a .svgRegion {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease 0.3s;
+  -moz-transition: all 0.3s ease 0.3s;
+  -o-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
 }
 
 .svgViticultural {
@@ -510,13 +510,18 @@ a .svgRegion {
   stroke-linejoin: round;
 }
 
-.svg--empty {
-  fill: #eeeeee;
-  stroke: none;
+a .svgViticultural {
+  fill: #CCEBB3;
+  transition: all .5s ease 0.3s;
 }
 
 a:hover .svgViticultural {
   fill: #AED2B1;
+}
+
+.svg--empty {
+  fill: #eeeeee;
+  stroke: none;
 }
 
 .svgBorders {
@@ -596,10 +601,10 @@ a:hover .svgViticultural {
 }
 
 .wmap-region a {
-  -webkit-transition: all 0.3s ease !important;
-  -moz-transition: all 0.3s ease !important;
-  -o-transition: all 0.3s ease !important;
-  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .wmap-region a:hover {
   scale: 100.3%;
@@ -746,10 +751,10 @@ a:hover .svgViticultural {
 }
 
 #svgGeorgia a {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #svgGeorgia a:hover {
   scale: 100.3%;
@@ -757,6 +762,14 @@ a:hover .svgViticultural {
 
 #svgGeorgia a:hover .svgRegion {
   fill: #C8E7CB;
+}
+
+#svgGeorgia a .svgViticultural {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  transition-delay: 0s;
 }
 
 #svgGeorgia .svgName {
@@ -1031,6 +1044,36 @@ a:hover .svgViticultural {
   }
 
   .wmap-samtskhe–javakheti #svgSamtskhe–Javakheti {
+    min-width: 400px;
+  }
+
+}
+
+
+
+
+
+/********   Adjara   ******/
+
+.wmap-adjara {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wmap-adjara #svgAdjara {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .wmap-adjara {
+    overflow: auto;
+  }
+
+  .wmap-adjara #svgAdjara {
     min-width: 400px;
   }
 
