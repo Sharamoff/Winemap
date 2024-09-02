@@ -1078,3 +1078,33 @@ a:hover .svgViticultural {
   }
 
 }
+
+
+
+
+
+/********   Guria   ******/
+
+.wmap-guria {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wmap-guria #svgGuria {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .wmap-guria {
+    overflow: auto;
+  }
+
+  .wmap-guria #svgGuria {
+    min-width: 400px;
+  }
+
+}
