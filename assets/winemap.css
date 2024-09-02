@@ -409,7 +409,7 @@
 }
 
 .wmap-legend__hdr {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
   color: #cccccc;
@@ -853,7 +853,7 @@ a:hover .svgViticultural {
 #PDO-Kindzmarauli-Kvareli .svgPDO { fill: url(#gr-red); }
 #PDO-Napareuli .svgPDO            { fill: url(#gr-red); }
 #PDO-Saperavi-Khashmi .svgPDO     { fill: url(#gr-red); }
-#PDO-Manavi .svgPDO               { fill: url(#gr-white); }
+#PDO-Manavi .svgPDO               { fill: url(#gr-white-amber); }
 #PDO-Tibaani .svgPDO              { fill: url(#gr-amber); }
 
 
@@ -953,6 +953,7 @@ a:hover .svgViticultural {
 
 }
 
+#PDO-Okureshis-Usakhelouri .svgPDO { fill: url(#gr-red); }
 #PDO-Tvishi .svgPDO { fill: url(#gr-white); }
 
 
