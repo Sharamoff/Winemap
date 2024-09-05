@@ -1,18 +1,27 @@
 .wmap-return {
-  display: block;
-  margin-top: -20px;
-  margin-bottom: 10px;
+  position: absolute;
+  z-index: 4;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  background: #eeeeee;
+  border-radius: 5px;
+  top: 30px;
+  left: 15px;
 }
 .wmap-return:before {
   content: "\2190";
   color: #999999;
-  margin-right: 6px;
   font-size: 22px;
 }
 
 @media screen and (max-width: 749px) {
   .wmap-return {
-    text-align: center;
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 15px auto 5px auto;
   }
 }
 
@@ -394,7 +403,7 @@
 .wmap-legend {
   position: absolute;
   right: 4dvw;
-  bottom: 4dvh;
+  bottom: 25%;
   background-color: rgba(221, 221, 221, 0.25);
   backdrop-filter: blur(4px);
   padding: 10px 15px 10px 10px;
@@ -412,7 +421,7 @@
   font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
-  color: #cccccc;
+  color: #666666;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
@@ -693,6 +702,7 @@ a:hover .svgViticultural {
 .winemap-plate {
   position: sticky;
   top: 40px;
+  height: 100dvh;
   background: #ffffff;
   z-index: 3;
   padding: 20px;
@@ -702,9 +712,10 @@ a:hover .svgViticultural {
   .winemap-plate {
     transform: scale(0.8);
     width: 125%;
+    height: 140dvh;
     margin-left: -12.5%;
-    margin-top: -6%;
-    top: -40px;
+    margin-top: -8%;
+    top: -60px;
     overflow: hidden;
   }
 }
@@ -713,11 +724,9 @@ a:hover .svgViticultural {
   font-size: 32px;
   width: 100%;
   max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 10px auto;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 0;
 }
 
 
