@@ -21,7 +21,8 @@
     display: block;
     position: relative;
     top: 0;
-    margin: 15px auto 5px auto;
+    margin: 5px auto 20px auto;
+    line-height: 30px;
   }
 }
 
@@ -46,6 +47,12 @@
   border-radius: 4px;
   transition: all 0.3s ease;
   width: var(--rl-width);
+}
+
+@media screen and (max-width: 768px) {
+  .wmap-regionlegend {
+    display: none;
+  }
 }
 
 .wmap-regionlegend.active {
@@ -403,18 +410,32 @@
 .wmap-legend {
   position: absolute;
   right: 4dvw;
-  bottom: 25%;
+  top: 8%;
   background-color: rgba(221, 221, 221, 0.25);
   backdrop-filter: blur(4px);
-  padding: 10px 15px 10px 10px;
+  padding: 10px 15px 8px 10px;
   border-radius: 5px;
   color: #000000;
   z-index: 10;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   letter-spacing: -.03em;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.2;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .wmap-legend {
+    top: 14%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .wmap-legend {
+    position: static;
+    margin-top: 10px;
+  }
 }
 
 .wmap-legend__hdr {
@@ -435,9 +456,7 @@
 .wmap-legend__list > li {
   display: flex;
   align-items: center;
-  margin: 2px 0;
   white-space: nowrap;
-  line-height: 1.2;
 }
 
 .wmap-legend__list > li:before {
@@ -445,8 +464,8 @@
   margin-bottom: 2px;
   content: "";
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 19px;
+  height: 19px;
   border-radius: 50%;
   border: solid 1px #FFB84D;
   margin-right: 10px;
@@ -477,25 +496,9 @@
 }
 
 @media screen and (max-width: 485px) {
-
-  .wmap-legend {
-    font-size: 12px;
-    padding: 8px 10px;
-    right: 20px;
-    bottom: 40px;
-  }
-
-  .wmap-legend__hdr {
-    font-size: 12px;
-    margin-bottom: 3px;
-  }
-
   .wmap-legend__list > li:before {
-    width: 19px;
-    height: 19px;
     margin-right: 5px;
   }
-
 }
 
 
@@ -702,21 +705,31 @@ a:hover .svgViticultural {
 .winemap-plate {
   position: sticky;
   top: 40px;
-  height: 100dvh;
+  height: calc(100dvh - 40px);
   background: #ffffff;
   z-index: 3;
   padding: 20px;
 }
 
-@media screen and (min-resolution: 120dpi) {
+@media screen and (min-width: 485px) and (min-resolution: 120dpi) {
   .winemap-plate {
     transform: scale(0.8);
     width: 125%;
-    height: 140dvh;
+    height: auto;
     margin-left: -12.5%;
-    margin-top: -8%;
-    top: -60px;
+    margin-top: -6%;
+    margin-bottom: -110px;
+    top: -40px;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .winemap-plate {
+    position: static;
+    width: 100%;
+    min-height: auto;
+    height: auto;
   }
 }
 
@@ -724,13 +737,29 @@ a:hover .svgViticultural {
   font-size: 32px;
   width: 100%;
   max-width: 1400px;
-  margin: 10px auto 10px auto;
+  margin: 10px auto 20px auto;
   text-transform: uppercase;
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .winemap-plate > .page_title {
+    font-size: 28px;
+  }
+}
 
+@media screen and (max-width: 485px) {
+  .winemap-plate > .page_title {
+    font-size: 19px;
+  }
+}
 
+@media (max-width: 768px) {
+  .winemap-plate a:focus,
+  .winemap-plate a:focus-visible {
+    outline: none;
+  }
+}
 
 
 /********   Georgia   ******/
@@ -745,18 +774,6 @@ a:hover .svgViticultural {
 .wmap-georgia #svgGeorgia {
   width: 100%;
   height: auto;
-}
-
-@media screen and (max-width: 768px) {
-
-  .wmap-georgia {
-    overflow: auto;
-  }
-
-  .wmap-georgia #svgGeorgia {
-    min-width: 700px;
-  }
-
 }
 
 #svgGeorgia a {
@@ -834,18 +851,6 @@ a:hover .svgViticultural {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-  .wmap-kakheti {
-    overflow: auto;
-  }
-
-  .wmap-kakheti #svgKakheti {
-    min-width: 400px;
-  }
-
-}
-
 #PDO-Akhmeta .svgPDO              { fill: url(#gr-white-amber); }
 #PDO-Kisi-Magraani .svgPDO        { fill: url(#gr-white-amber); }
 #PDO-Tsinandali .svgPDO           { fill: url(#gr-white); }
@@ -883,25 +888,15 @@ a:hover .svgViticultural {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-  .wmap-kartli {
-    overflow: auto;
-  }
-
-  .wmap-kartli #svgKartli {
-    min-width: 400px;
-  }
-
-}
-
 #PDO-Asuretuli-Shala .svgPDO  { fill: url(#gr-red); }
 #PDO-Ateni .svgPDO            { fill: url(#gr-white); }
 #PDO-Okami .svgPDO            { fill: url(#gr-red-white); }
 #PDO-Bolnisi .svgPDO          { fill: url(#gr-red-white); }
 
-
-
+.wmap-kartli ~ .wmap-legend {
+  right: auto;
+  left: 4dvw;
+}
 
 
 /********   Racha   ******/
@@ -918,21 +913,12 @@ a:hover .svgViticultural {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-  .wmap-racha {
-    overflow: auto;
-  }
-
-  .wmap-racha #svgRacha {
-    min-width: 400px;
-  }
-
-}
-
 #PDO-Khvanchkara .svgPDO { fill: url(#gr-red); }
 
-
+.wmap-racha ~ .wmap-legend {
+  right: auto;
+  left: 4dvw;
+}
 
 
 
@@ -948,18 +934,6 @@ a:hover .svgViticultural {
 .wmap-racha #svgLechkhumi {
   width: 100%;
   height: auto;
-}
-
-@media screen and (max-width: 768px) {
-
-  .wmap-lechkhumi {
-    overflow: auto;
-  }
-
-  .wmap-lechkhumi #svgLechkhumi {
-    min-width: 400px;
-  }
-
 }
 
 #PDO-Okureshis-Usakhelouri .svgPDO { fill: url(#gr-red); }
@@ -983,18 +957,6 @@ a:hover .svgViticultural {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-  .wmap-imereti {
-    overflow: auto;
-  }
-
-  .wmap-imereti #svgImereti {
-    min-width: 400px;
-  }
-
-}
-
 #PDO-Sviri .svgPDO { fill: url(#gr-white); }
 
 
@@ -1015,21 +977,12 @@ a:hover .svgViticultural {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-  .wmap-samegrelo {
-    overflow: auto;
-  }
-
-  .wmap-imereti #svgSamegrelo {
-    min-width: 400px;
-  }
-
-}
-
 #PDO-Salkhino_Ojaleshi .svgPDO { fill: url(#gr-red); }
 
-
+.wmap-samegrelo ~ .wmap-legend {
+  right: auto;
+  left: 4dvw;
+}
 
 
 
@@ -1045,18 +998,6 @@ a:hover .svgViticultural {
 .wmap-samtskhe–javakheti #svgSamtskhe–Javakheti {
   width: 100%;
   height: auto;
-}
-
-@media screen and (max-width: 768px) {
-
-  .wmap-samtskhe–javakheti {
-    overflow: auto;
-  }
-
-  .wmap-samtskhe–javakheti #svgSamtskhe–Javakheti {
-    min-width: 400px;
-  }
-
 }
 
 
@@ -1077,18 +1018,6 @@ a:hover .svgViticultural {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-  .wmap-adjara {
-    overflow: auto;
-  }
-
-  .wmap-adjara #svgAdjara {
-    min-width: 400px;
-  }
-
-}
-
 
 
 
@@ -1107,14 +1036,3 @@ a:hover .svgViticultural {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-  .wmap-guria {
-    overflow: auto;
-  }
-
-  .wmap-guria #svgGuria {
-    min-width: 400px;
-  }
-
-}
